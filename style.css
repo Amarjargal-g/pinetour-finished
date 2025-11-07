@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.con {
+  background-image: url(./image/bck.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 1440px;
+  height: 773px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 20px;
+}
+.nav {
+  display: flex;
+  gap: 24px;
+}
+.hero {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 300px;
+}
+.text {
+  font-size: 80px;
+  color: #e8edf2b8;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.text-big {
+  font-size: 250px;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+}
+.con2 {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./image/sec2-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 1440px;
+  color: white;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  background-size: cover;
+  width: 275.49px;
+  height: 370px;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 37px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  color: #fdfdfecc;
+  box-shadow: 8px 8px 0px 0px #29728b40, -8px -8px 0px 0px #1f72aa75;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay:hover {
+  background-color: rgb(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 40px;
+}
+.bg-image-1 {
+  background-image: url("./image/sec2-location1.png");
+}
+.bg-image-2 {
+  background-image: url(./image/sec2-location2.png);
+}
+.bg-image-3 {
+  background-image: url(./image/sec2-location3.png);
+}
+.bg-image-4 {
+  background-image: url(./image/sec2-location4.png);
+}
+
+.con3 {
+  background-image: url(./image/sec3-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1022px;
+  width: 100%;
+  max-width: 1440px;
+  color: black;
+}
+.hero1 {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blocks {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 30px;
+  gap: 20px;
+}
+
+.block1 {
+  display: flex;
+  background-color: #eee9d9;
+  width: 513px;
+  height: 112px;
+  border-radius: 120px;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  border: solid #eee9d9 5px;
+}
+.block1:hover {
+  border-color: white;
+}
+.block_flex {
+  display: flex;
+}
+
+.block2 {
+  border: 4px;
+  border-color: white;
+  display: flex;
+  background-color: #8bb8c1cc;
+  border-color: white 4px;
+  width: 513px;
+  height: 112px;
+  border-radius: 120px;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  border: solid #8bb8c1cc 5px;
+}
+.block2:hover {
+  border-color: white;
+}
+
+.block3 {
+  border: 1px;
+  display: flex;
+  background-color: #aad8d7cc;
+  border-color: white 4px;
+  width: 513px;
+  height: 112px;
+  border-radius: 120px;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  border: solid #aad8d7cc 5px;
+}
+.block3:hover {
+  border-color: white;
+}
+
+.block4 {
+  border: 1px;
+  display: flex;
+  background-color: #8bc0bdcc;
+  border-color: white 4px;
+  width: 513px;
+  height: 112px;
+  border-radius: 120px;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  border: solid #8bc0bdcc 5px;
+}
+.block4:hover {
+  border-color: white;
+}
+
+.block5 {
+  border: 1px;
+  display: flex;
+  background-color: #97cce0cc;
+  border-color: white 4px;
+  width: 513px;
+  height: 112px;
+  border-radius: 120px;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  border: solid #97cce0cc 5px;
+}
+.block5:hover {
+  border-color: white;
+}
+
+.daycon {
+  border: 1px;
+  width: 52px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.con4 {
+  background-image: url(./image/sec4-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1120px;
+  max-width: 1440px;
+}
+.cardprice {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.hero2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.block6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  height: 527px;
+  width: 384px;
+  border-radius: 40px;
+  gap: 24px;
+}
+.heart {
+  width: 36px;
+  height: 36px;
+}
