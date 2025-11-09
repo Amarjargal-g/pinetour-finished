@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .con {
   background-image: url(./image/bck.png);
@@ -32,13 +38,12 @@ a {
   gap: 24px;
 }
 .hero {
-  height: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 300px;
+  margin-top: 200px;
 }
 .text {
   font-size: 80px;
@@ -51,6 +56,8 @@ a {
   color: white;
   font-family: "Bebas Neue", sans-serif;
 }
+
+
 .con2 {
   display: flex;
   gap: 24px;
@@ -60,17 +67,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   color: white;
 }
-.text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  gap: 50px;
-}
+
 
 .card {
   display: flex;
@@ -120,6 +121,7 @@ a {
   width: 100%;
   max-width: 1440px;
   color: black;
+  position: relative;
 }
 .hero1 {
   font-family: sans-serif;
@@ -131,9 +133,44 @@ a {
 .blocks {
   display: flex;
   flex-direction: column;
-  padding: 30px 30px 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
   gap: 20px;
+  font-family: sans-serif;
 }
+.block_flex {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+ 
+}
+.circle{
+  position: absolute;
+  width: 245.34px;
+  height: 245px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 10;
+  
+
+}
+
+.p1{ top: 330px; left: 1100px; background-image: url(./image/sec3-day1.png);}
+.p2{ top:  270px;left:800px; background-image: url(./image/sec3-day2.png);}
+.p3{ top: 340px; left: 700px; background-image: url(./image/sec3-day3.png);}
+.p4{ top: 40px; left: 550px; background-image: url(./image/sec3-day4.png);}
+.p5{ top: 140px; left: 800px; background-image: url(./image/sec3-day5.png);}
+
+
+.day1:hover ~ .p1{opacity: 1;}
+.day2:hover ~ .p2{opacity: 1;}
+.day3:hover ~ .p3{opacity: 1;}
+.day4:hover ~ .p4{opacity: 1;}
+.day5:hover ~ .p5{opacity: 1;}
+
+.blocks.hover ~ .circle{opacity: 0;}
 
 .block1 {
   display: flex;
@@ -145,20 +182,17 @@ a {
   padding: 0 20px;
   align-items: center;
   border: solid #eee9d9 5px;
+  font-family: sans-serif;
 }
 .block1:hover {
   border-color: white;
 }
-.block_flex {
-  display: flex;
-}
+
 
 .block2 {
-  border: 4px;
-  border-color: white;
+  border: solid 4px white;
   display: flex;
   background-color: #8bb8c1cc;
-  border-color: white 4px;
   width: 513px;
   height: 112px;
   border-radius: 120px;
@@ -166,7 +200,12 @@ a {
   padding: 0 20px;
   align-items: center;
   border: solid #8bb8c1cc 5px;
+  font-family: sans-serif;
 }
+
+
+
+
 .block2:hover {
   border-color: white;
 }
@@ -183,7 +222,12 @@ a {
   padding: 0 20px;
   align-items: center;
   border: solid #aad8d7cc 5px;
+  font-family: sans-serif;
 }
+
+
+
+
 .block3:hover {
   border-color: white;
 }
@@ -200,7 +244,14 @@ a {
   padding: 0 20px;
   align-items: center;
   border: solid #8bc0bdcc 5px;
+  font-family: sans-serif;
 }
+
+
+
+
+
+
 .block4:hover {
   border-color: white;
 }
@@ -217,7 +268,15 @@ a {
   padding: 0 20px;
   align-items: center;
   border: solid #97cce0cc 5px;
+  font-family: sans-serif;
 }
+
+
+
+
+
+
+
 .block5:hover {
   border-color: white;
 }
@@ -238,8 +297,15 @@ a {
   background-image: url(./image/sec4-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1120px;
+  min-height: 100vh;
   max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+
+
 }
 .cardprice {
   display: flex;
@@ -248,25 +314,89 @@ a {
   flex-wrap: wrap;
   padding: 40px;
 }
-
 .hero2 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: sans-serif;
 }
 .block6 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: white;
+  font-family: sans-serif;
   height: 527px;
   width: 384px;
   border-radius: 40px;
-  gap: 24px;
+  gap: 20px;
+  padding: 20px;
 }
-.heart {
-  width: 36px;
-  height: 36px;
+.cardprice .block6:hover{
+ box-shadow: 8px 8px 0px 0px #1f72aa75, -8px -8px 0px 0px  #b4b1b1;
 }
+.slct-button{
+  background-color: #A4D1E2;
+  width: 336px;
+  height: 48px;
+  border-radius: 20px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  cursor:pointer;
+}
+.slct-button p {
+  margin: 0;
+  color: black;
+}
+.slct-button:hover{
+background-color: #18181BE5;
+}
+.slct-button:hover p{
+  color: white;
+}
+
+
+.block7{
+  background-color: white;
+  width: 167px;
+  height: 44px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6972B5;
+  font-family: sans-serif;
+  gap: 10px;
+  transition: 0.3s;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px; 
+  color: white;
+
+}
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 40px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
